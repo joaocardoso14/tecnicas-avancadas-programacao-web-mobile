@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/oitavo_trabalho_parcial.iml" filepath="$PROJECT_DIR$/oitavo_trabalho_parcial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/oitavo_trabalho_parcial_android.iml" filepath="$PROJECT_DIR$/android/oitavo_trabalho_parcial_android.iml" />
+    </modules>
+  </component>
+</project>
