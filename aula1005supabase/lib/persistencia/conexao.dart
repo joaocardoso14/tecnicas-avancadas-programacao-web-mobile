@@ -12,6 +12,6 @@ void main () {
     'sb_publishable_N4AZPC1256yuryOiypAF_g_KoS7MVD6'
   );
   
-  print('Conexão estabelecida com sucesso!');
+  print('Conexão estabelecida com sucesso!\n$cliente');
 
 }

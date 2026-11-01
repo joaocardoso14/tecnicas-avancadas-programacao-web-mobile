@@ -4,7 +4,9 @@
 
 import 'package:supabase/supabase.dart';
 
-void main () {
+void main () async {// async e await são utilizados para esperar a resposta do banco de dados, visto que o banco de dados não é sincrono, ou seja, ele não responde na hora, ele precisa de um tempo para processar a informação.
+
+
   // Primeiro url, dps senha pública
   // Disponível em 'conexao' lá no supabase
   SupabaseClient cliente = SupabaseClient (
@@ -13,7 +15,7 @@ void main () {
   );
   
   // Lista de Mapas, visto que um mapa é um registro, é uma lista de vários registros.
-  // List <Map <String, dynamic>> salvo;
+  List <Map <String, dynamic>> salvo = await // await é utilizado para esperar a resposta do banco de dados, visto que o banco de dados não é sincrono, ou seja, ele não responde na hora, ele precisa de um tempo para processar a informação.
   cliente.from('produtos')
   .insert({ //Mapa, que se é parecido com json
     'nome': 'Coca Cola',
@@ -21,5 +23,7 @@ void main () {
     'quantidade': 15,
   })
   .select();
+
+  print('Produto salvo: $salvo');
 
 }
